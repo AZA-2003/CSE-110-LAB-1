@@ -7,11 +7,19 @@
 	background-size: contain;
 	color: white;
 }
+img {
+	max-width: 100%;
+}
 div {
+	background-color:rgb(245,240,230);
 	width: 100%;
 	display: inline-block;
 
 }
+p {
+	font-size: 28px;
+}
+
 ul {
 	list-style-type: none;
 	position: sticky;
@@ -38,13 +46,26 @@ li a:hover{
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	column-gap: 25px;
-	/*padding:10px;*/
 	grid-auto-rows: minmax(auto,500px);
 }
 .column {
-	grid-row: 1/4;
 	padding: 12px;
 	background-color: #182b49;
 	color: white;
 	overflow:scroll;
+	text-align: center;
+}
+@media screen and (max-width: 800px){
+	li a{
+		display:none;
+	}
+	p{
+		font-size: 20px;
+	}
+	h1{
+		font-size: 24px;
+	}
+	.column-space{
+		grid-template-columns: repeat(2,1fr);
+	}
 }
