@@ -45,7 +45,7 @@ li a:hover{
 	background-color: rgb(245,240,230);
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
-	column-gap: 25px;
+	gap: 25px 25px;
 	grid-auto-rows: minmax(auto,500px);
 }
 .column {
